@@ -1,0 +1,21 @@
+/* 
+seletor de tag -> tag específidade 1
+seletor de classe -> . específidade 2
+seletor de id -> #  específidade 3*/
+
+p {
+  color: blueviolet;
+}
+h2 {
+  color: brown;
+}
+h4 {
+  font-size: 25px;
+}
+.titulo {
+  color: purple;
+  font-size: 40px;
+}
+#paragrafo-especial {
+  font-style: italic;
+}

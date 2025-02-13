@@ -1,5 +1,5 @@
-body{
-    margin-bottom: 1000px;
+body {
+  margin-bottom: 1000px;
 }
 /* 
 seletor de tag -> tag específidade 1
@@ -22,23 +22,160 @@ id = seletor específico para um elemento */
 #paragrafo-especial {
   font-style: italic;
 }
- /* 4- propriedade de texto */
-.basic-text{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #2bea24;
- }
- .styled-text{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
- }
- .weighty-text{
-    font-weight: bold;
-    font-size: 40px;
- }
- .fancy-text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    color: tomato;
-    text-align: center;
-    text-transform: uppercase;
- }
+/* 4- propriedade de texto */
+.basic-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2bea24;
+}
+.styled-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+.weighty-text {
+  font-weight: bold;
+  font-size: 40px;
+}
+.fancy-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: tomato;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* 5 - cores
+ 99% HEX
+ nome de cores = Nunca
+ 1% = RGBA => A Alpha opacidade */
+
+.hex-color {
+  /* 6 algarimos, precedidos por # A-F 0_9 */
+  /* F -> mais claro, 0 -> mais escuro*/
+  color: rgb(21, 113, 252);
+}
+
+.rgb-color {
+  /* Red, Green, Blue */
+  /* mais escuro < - 0 - 255 - > mais claro */
+  color: rgb(21, 113, 252);
+}
+
+/* Hue, Saturation, Lightness */
+.hsl-color {
+  color: hsl(46, 74%, 45%);
+}
+.rgba-color {
+  /* 0 -> invisivel, 1-> totalmete visivel */
+  background-color: rgba(203, 43, 34, 44);
+}
+.hsla-color {
+  background-color: hsla(12, 33, 44, 133);
+}
+
+.simple-link {
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* Hiver = evento de quando o usuário passa o mause por cima  */
+.hover-link {
+  text-decoration: none;
+  color: orange;
+}
+
+/* 100-900 -> mas nem todas as fontes tem todos ! 
+valores diferentes teem o mesmo weight*/
+.bold-link {
+  font-weight: 300;
+}
+.bold-link-2 {
+  font-weight: 900;
+}
+
+/* BOX MODEL */
+
+.width-height {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #123;
+  background-color: #321;
+  color: aliceblue;
+}
+/* Espaçamento interno, que poder ser adcionado aos 4 cantos */
+.padding-example {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #123;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+/* Margin = espacamento externo */
+.margin-exemple {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #123;
+  margin: 30px;
+}
+/* Shorthend = 1 todos, 2 valores lateral e superior */
+.complete-box {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #123;
+  padding: 50px 100px;
+  margin: 10px 20px 30px 40px;
+  /* mundo real */
+}
+
+/* SHORT HAND = 99% */
+/* ORDEM: todos os lados, cima e lateral, especificados */
+
+.static-example {
+  position: static;
+  background-color: #321;
+  border: 1px solid #123;
+  color: aliceblue;
+}
+.relative-example {
+  color: aliceblue;
+  position: relative;
+  top: 40px;
+  left: 50px;
+  background-color: #123;
+}
+
+.absolute-example {
+  position: absolute;
+  background-color: red;
+  top: 10px;
+  left: 250px;
+}
+
+.fixed-example {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #afeafe;
+  border: 2px solid #000;
+}
+
+.sticky-example {
+  position: sticky;
+  top: 0;
+  background-color: #adadaa;
+  border: 2px solid #000;
+}
+.relative-container {
+  margin-top: 300px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+.absolute-inside-relative {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #941;
+}

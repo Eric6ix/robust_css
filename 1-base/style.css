@@ -1,17 +1,20 @@
+body{
+    margin-bottom: 1000px;
+}
 /* 
 seletor de tag -> tag específidade 1
 seletor de classe -> . específidade 2
-seletor de id -> #  específidade 3*/
+seletor de id -> #  específidade 3
+*/
 
-p {
-  color: blueviolet;
-}
 h2 {
   color: brown;
 }
 h4 {
   font-size: 25px;
 }
+/* clsse = selecto mais específico para muitos elemetos
+id = seletor específico para um elemento */
 .titulo {
   color: purple;
   font-size: 40px;
@@ -19,3 +22,23 @@ h4 {
 #paragrafo-especial {
   font-style: italic;
 }
+ /* 4- propriedade de texto */
+.basic-text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2bea24;
+ }
+ .styled-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+ }
+ .weighty-text{
+    font-weight: bold;
+    font-size: 40px;
+ }
+ .fancy-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+ }

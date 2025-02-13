@@ -166,11 +166,13 @@ valores diferentes teem o mesmo weight*/
   background-color: #adadaa;
   border: 2px solid #000;
 }
+/* Absolut precisa de um pai relative */
 .relative-container {
   margin-top: 300px;
   width: 300px;
   height: 300px;
   border: 1px solid #000;
+  position: relative;
 }
 
 .absolute-inside-relative {
@@ -179,3 +181,37 @@ valores diferentes teem o mesmo weight*/
   right: 0;
   background-color: #941;
 }
+
+/* flex-box */
+
+.flex-container {
+  display: flex;
+  border: 2px solid #000;
+  padding: 10px;
+  height: 1000px;
+}
+
+.flex-item {
+  width: 100px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+/* começo ou fim start e end */
+.flex-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item{
+    flex: 1;
+}
+.flex-container{
+    flex-direction: column;
+}
+
+
+/* flwx sempre preciso de um elemento pai  */
+/* flexbox ajuda a pooscionar os items */
+/* para vários elementos  */

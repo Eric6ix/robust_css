@@ -1,0 +1,14 @@
+html,
+body{
+display: flex;/* Centraliza Horizontal */
+justify-content: center; /* Centraliza Vertical */
+align-items: center;
+background-color: #f0f0f0;
+font-family: Helvetica;
+
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

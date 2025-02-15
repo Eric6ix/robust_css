@@ -1,0 +1,71 @@
+/* Resetando margins e padding para melhor entendimento do código  */
+* {
+  margin: 0px; /*Remave a margem de todos os elementos */
+  padding: 0px; /*Remave a padding de todos os elementos */
+  box-sizing: border-box; /*Inclui o padding e a borda dentro das dimensôes dos elementos  */
+}
+
+/* Definindo o estilo da barra de navegação */
+.navbar {
+  display: flex; /* Espaça os items do itens de forma flexível */
+  justify-content: space-between; /* Espaça os itens do início ao fim da barra */
+  align-items: center; /* Alinha os itens no centro verticalmente */
+  padding: 20px 40px; /*Espaçamento interno de 20 pixel no top e embaixo, 40 pixel nas laterais */
+  background-color: #333;
+}
+
+/* Estilação de logo */
+
+.logo a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none; /*com a junção do "none" remove o sublinhado do link*/
+}
+
+/* Estilos para o menu de navegação */
+
+.menu {
+  list-style: none; /*Remove os marcadores da lsiat de itens*/
+  display: flex; /* Exibe os itens do menu em um linha (horizontal) */
+}
+
+.menu a {
+  text-decoration: none; /* remove o subilinhado dos links */
+  color: white;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: backgrond-color 0.3s;
+  border-radius: 10px;
+}
+
+/* Estilo responsivo para telas menores */
+.menu a:hover {
+  background-color: #555;
+}
+
+/* Estilo responsivo parra telad menors */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Muda a direção dos itens para uma coluna (vertical) em pequenas telas */
+    align-items: center; /*Centraliza os itens da lsiat no eixo horixontal */
+    position: absolute; /*Torna o menu posicionado deforma absoluta emrelação à navbar*/
+    top: 60px; /* Define o topo da ista para 60px, afastando-a do topo da lista */
+    left: 0; /* alinha o menu ao lado esquerdo da lista */
+    width: 100%; /* Faz o menu ocupar toda a largura da tela */
+    background-color: #333;
+    display: none; /*inicialmente o menu estrá escondido*/
+  }
+
+  .menu li {
+    margin-left: 0; /*Remove o espaçamento à esquerda dos itens lista*/
+    margin-bottom: 10px; /*adciona um espaçamento de 10px abaixo de cada item */
+  }
+
+  .menu a {
+    font-size: 20px;
+  }
+
+  .navbar.open .menu {
+    display: flex; /*Exibe o menu quando a clasee "open" for adicionada à navbar*/
+  }
+}

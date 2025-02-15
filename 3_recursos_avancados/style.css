@@ -1,11 +1,133 @@
 /* Estilos de lista */
-.lista-pontos{
-    list-style-type: square;
+.lista-pontos {
+  list-style-type: square;
 }
-.lista-numeriaca{
-    list-style-type: lower-roman;
+.lista-numeriaca {
+  list-style-type: lower-roman;
 }
-.lista-imagem{
-    list-style-type: none;
-    list-style-image: url("img/circle.png");
+.lista-imagem {
+  list-style-type: none;
+  list-style-image: url("img/circle.png");
 }
+
+/* 2 unidades de medidas */
+.container {
+  width: 80%;
+  border: 1px solid red;
+}
+
+.pixel-box {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #111;
+}
+/* 1000px = (html) -> 800 = 80% (container) -> 400 50% percent-box */
+.parcent-box {
+  width: 50%;
+  height: 100px;
+  border: 1px solid blue;
+}
+/* 2x o tamanho de font elemento pai
+em fonte controlada pelo elemento pai */
+.em-text {
+  font-size: 2rem;
+}
+/* rem, fonte controlada pelo root elemento */
+.em-text {
+  font-size: 2em;
+}
+
+/* 4- pseudo elemeto */
+.styled-list li:first-child {
+  list-style-type: none;
+}
+.styled-list li:last-child {
+  color: blue;
+}
+.styled-list li::before {
+  color: red;
+}
+.hover-box {
+  width: 100px;
+  height: 100px;
+  background-color: #111;
+  transition: 0.5s;
+}
+.hover-box:hover {
+  transform: scale(1.1);
+  color: blueviolet;
+}
+
+/* degradê
+ */
+.linear-gradient-box {
+  background-image: linear-gradient(
+    to right,
+    #fcfcfc,
+    #ff9191,
+    #fc2929,
+    #000000
+  );
+  width: 50px;
+  height: 50px;
+}
+.radial-gradient-box {
+  background-image: radial-gradient(circle, #fcfcfc, #ff9191, #fc2929, #000000);
+  width: 50px;
+  height: 50px;
+}
+.multuple-gradient-box {
+  background-image: linear-gradient(to left, #fcfcfc, #ff9191, #fc2929, #000000),
+    radial-gradient(circle at top, #000000, #fcfcfc);
+  width: 50px;
+  height: 50px;
+}
+/* 5 */
+
+.box-shadow-exeple {
+  width: 300px;
+  height: 100px;
+  background-color: #fcfcfc;
+  box-shadow: 5px 5px 20px #111;
+}
+.text-shadow-exemple {
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  color: #fcfcfc;
+  background-color: #fc2929;
+  text-shadow: 1px 1px 5px #000000;
+  text-align: center;
+}
+.multuple-shadow-exemple {
+  width: 300px;
+  height: 100px;
+  box-shadow: 3px 3px 5px #000000;
+}
+.z-index-box {
+  position: relative;
+  height: 300px;
+}
+.box {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  border: 1px solid #111;
+}
+.backgrond {
+  top: 20px;
+  left: 20px;
+}
+.middle {
+  top: 40px;
+  left: 40px;
+  z-index: 20;
+  background-color: 1px solid #fc2929;
+}
+.foregrond {
+  top: 20px;
+  left: 20px;
+  background-color: 1px solid #ff9191
+}
+
+/* 7 variáveis   */

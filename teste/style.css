@@ -16,9 +16,12 @@
 
 /* Estilação de logo */
 
-.logo a {
+.logo img {
   font-size: 24px;
   color: white;
+  height: 100px;
+  width:  100px;
+  border-radius: 50%;
   text-decoration: none; /*com a junção do "none" remove o sublinhado do link*/
 }
 
@@ -68,4 +71,76 @@
   .navbar.open .menu {
     display: flex; /*Exibe o menu quando a clasee "open" for adicionada à navbar*/
   }
+}
+
+
+
+/* Estilo básico para o card */
+.product-card {
+  width: 300px; /* Largura do card */
+  border: 1px solid #ddd; /* Borda sutil */
+  border-radius: 8px; /* Cantos arredondados */
+  overflow: hidden; /* Esconde conteúdo que ultrapassa o card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  margin: 10px; /* Margem externa */
+  background: #fff; /* Fundo branco */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+/* Efeito ao passar o mouse */
+.product-card:hover {
+  transform: translateY(-5px); /* Levanta o card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+/* Estilo da imagem do produto */
+.product-image {
+  width: 100%; /* Largura total do card */
+  height: 350px; /* Altura fixa para a imagem */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Estilo para a área de informações do produto */
+.product-info {
+  padding: 15px; /* Espaçamento interno */
+}
+
+/* Estilo do título do produto */
+.product-title {
+  font-size: 1.2em; /* Tamanho da fonte */
+  margin: 0 0 10px 0; /* Margem inferior */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilo da descrição do produto */
+.product-description {
+  font-size: 0.9em; /* Tamanho da fonte */
+  color: #666; /* Cor do texto */
+  margin: 0 0 10px 0; /* Margem inferior */
+}
+
+/* Estilo do preço do produto */
+.product-price {
+  font-size: 1.1em; /* Tamanho da fonte */
+  color: #000; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
+  margin: 0 0 15px 0; /* Margem inferior */
+}
+
+/* Estilo do botão de ação */
+.product-button {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #007bff; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de ponteiro */
+  font-size: 1em; /* Tamanho da fonte */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse no botão */
+.product-button:hover {
+  background-color: #0056b3; /* Cor de fundo mais escura */
 }
